@@ -60,11 +60,7 @@ jobs:
             set -e
             cd ~/springboot2
 
-            # (Docker Hub가 비공개 레포일 때만 필요)
-            #if [ -n "${{ secrets.DOCKERHUB_USERNAME }}" ] && [ -n "${{ secrets.DOCKERHUB_TOKEN }}" ]; then
-            #  echo "Docker Hub login..."
-            #  echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
-            #fi
+
 
             # 최신 이미지 pull 및 기동
             docker compose pull
