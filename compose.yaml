@@ -1,9 +1,9 @@
-version: "3.9"
+
 
 services:
   web2:
     image: gingerbon/springboot2-web3:latest
-    container_name: springboot_app2
+    container_name: springboot_app4
     ports:
       - "9090:8080"
     environment:
